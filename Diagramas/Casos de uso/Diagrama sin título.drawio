@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0" version="26.2.13">
   <diagram name="Diagrama de Casos de Uso" id="DjnuiK8PyyJzFfoakw95">
-    <mxGraphModel dx="1871" dy="1704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2567" dy="2061" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -263,6 +263,32 @@
             <mxPoint x="470" y="1241" as="targetPoint" />
             <Array as="points">
               <mxPoint x="370" y="1280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZHeTGY5Y9q0UBsN3ZSBc-211" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="ZHeTGY5Y9q0UBsN3ZSBc-203" target="ZHeTGY5Y9q0UBsN3ZSBc-168">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="910" as="sourcePoint" />
+            <mxPoint x="890" y="920" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="990" />
+              <mxPoint x="760" y="840" />
+              <mxPoint x="480" y="840" />
+              <mxPoint x="480" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZHeTGY5Y9q0UBsN3ZSBc-212" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" edge="1" parent="1" source="ZHeTGY5Y9q0UBsN3ZSBc-152" target="ZHeTGY5Y9q0UBsN3ZSBc-168">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="1290" as="sourcePoint" />
+            <mxPoint x="381" y="950" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="1280" />
+              <mxPoint x="240" y="1340" />
+              <mxPoint x="760" y="1340" />
+              <mxPoint x="760" y="840" />
+              <mxPoint x="480" y="840" />
+              <mxPoint x="480" y="770" />
             </Array>
           </mxGeometry>
         </mxCell>
