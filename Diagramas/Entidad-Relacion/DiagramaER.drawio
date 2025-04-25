@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0" version="26.2.14">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
-    <mxGraphModel dx="2692" dy="1610" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <mxGraphModel dx="2351" dy="1434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -73,10 +73,10 @@
           <mxGeometry y="50" width="250" height="120" as="geometry" />
         </mxCell>
         <mxCell id="ubc1t0KaTrGF7OC6TyDT-3" value="Suscripción" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-400" y="175" width="140" height="100" as="geometry" />
+          <mxGeometry x="-420" y="175" width="160" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="ubc1t0KaTrGF7OC6TyDT-4" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;+FK-idUsuario: Integer&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;+FK-idHilo: Integer&lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="ubc1t0KaTrGF7OC6TyDT-3" vertex="1">
-          <mxGeometry y="50" width="140" height="50" as="geometry" />
+        <mxCell id="ubc1t0KaTrGF7OC6TyDT-4" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;+FK-idUsuario: Integer&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;+FK-idHilo: Integer&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;+fechaSuscripción: Date&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="ubc1t0KaTrGF7OC6TyDT-3" vertex="1">
+          <mxGeometry y="50" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="ubc1t0KaTrGF7OC6TyDT-7" value="CarritoItem" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1130" y="190" width="150" height="120" as="geometry" />
@@ -275,7 +275,7 @@
         <mxCell id="ubc1t0KaTrGF7OC6TyDT-51" value="Comentario" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-880" y="152.81" width="170" height="144.37" as="geometry" />
         </mxCell>
-        <mxCell id="ubc1t0KaTrGF7OC6TyDT-52" value="&lt;div&gt;&lt;b&gt;+PK-idComentario: Integer&lt;/b&gt;&lt;/div&gt;&lt;div&gt;+contenido: String&lt;/div&gt;&lt;div&gt;+fecha: Date&lt;/div&gt;&lt;div&gt;+moderado: Boolean&lt;/div&gt;&lt;div&gt;&lt;u&gt;+FK-idAutor: Integer&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="ubc1t0KaTrGF7OC6TyDT-51" vertex="1">
+        <mxCell id="ubc1t0KaTrGF7OC6TyDT-52" value="&lt;div&gt;&lt;b&gt;+PK-idComentario: Integer&lt;/b&gt;&lt;/div&gt;&lt;div&gt;+contenido: String&lt;/div&gt;&lt;div&gt;+fecha: Date&lt;/div&gt;&lt;div&gt;+moderado: Boolean&lt;/div&gt;&lt;div&gt;&lt;u&gt;+FK-idAutor: Integer&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="ubc1t0KaTrGF7OC6TyDT-51" vertex="1">
           <mxGeometry y="50" width="170" height="94.37" as="geometry" />
         </mxCell>
         <mxCell id="ubc1t0KaTrGF7OC6TyDT-53" value="Escribe" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
