@@ -69,7 +69,7 @@
         <mxCell id="ubc1t0KaTrGF7OC6TyDT-1" value="Hilo" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-670" y="-270" width="250" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="ubc1t0KaTrGF7OC6TyDT-2" value="&lt;div&gt;&lt;b&gt;+PK-idHilo: Integer&lt;/b&gt;&lt;/div&gt;&lt;div&gt;+titulo: String&lt;/div&gt;&lt;div&gt;+contenido: String&lt;/div&gt;&lt;div&gt;+fechaCreacion: Date&lt;/div&gt;&lt;div&gt;&lt;u&gt;+FK-idAutor: Integer&lt;/u&gt;&lt;/div&gt;&lt;div&gt;+autor: String&lt;/div&gt;&lt;div&gt;+adjunto: Array de Strings (URLs o rutas)&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="ubc1t0KaTrGF7OC6TyDT-1" vertex="1">
+        <mxCell id="ubc1t0KaTrGF7OC6TyDT-2" value="&lt;div&gt;&lt;b&gt;+PK-idHilo: Integer&lt;/b&gt;&lt;/div&gt;&lt;div&gt;+titulo: String&lt;/div&gt;&lt;div&gt;+contenido: String&lt;/div&gt;&lt;div&gt;+fechaCreacion: Date&lt;/div&gt;&lt;div&gt;+fechaModificacion: Date&lt;/div&gt;&lt;div&gt;&lt;u&gt;+FK-idAutor: Integer&lt;/u&gt;&lt;/div&gt;&lt;div&gt;+adjunto: Array de Strings (URLs o rutas)&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="ubc1t0KaTrGF7OC6TyDT-1" vertex="1">
           <mxGeometry y="50" width="250" height="120" as="geometry" />
         </mxCell>
         <mxCell id="ubc1t0KaTrGF7OC6TyDT-3" value="Suscripción" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -273,10 +273,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="ubc1t0KaTrGF7OC6TyDT-51" value="Comentario" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-870" y="142.5" width="160" height="165" as="geometry" />
+          <mxGeometry x="-870" y="145.63" width="160" height="158.75" as="geometry" />
         </mxCell>
-        <mxCell id="ubc1t0KaTrGF7OC6TyDT-52" value="&lt;div&gt;&lt;b&gt;+PK-idComentario: Integer&lt;/b&gt;&lt;/div&gt;&lt;div&gt;+contenido: String&lt;/div&gt;&lt;div&gt;+fecha: Date&lt;/div&gt;&lt;div&gt;+moderado: Boolean&lt;/div&gt;&lt;div&gt;&lt;u&gt;+FK-idAutor: Integer&lt;/u&gt;&lt;/div&gt;&lt;div&gt;+autor: String&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="ubc1t0KaTrGF7OC6TyDT-51" vertex="1">
-          <mxGeometry y="50" width="160" height="115" as="geometry" />
+        <mxCell id="ubc1t0KaTrGF7OC6TyDT-52" value="&lt;div&gt;&lt;b&gt;+PK-idComentario: Integer&lt;/b&gt;&lt;/div&gt;&lt;div&gt;+contenido: String&lt;/div&gt;&lt;div&gt;+fecha: Date&lt;/div&gt;&lt;div&gt;+moderado: Boolean&lt;/div&gt;&lt;div&gt;&lt;u&gt;+FK-idAutor: Integer&lt;/u&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;whiteSpace=wrap;" parent="ubc1t0KaTrGF7OC6TyDT-51" vertex="1">
+          <mxGeometry y="50" width="160" height="108.75" as="geometry" />
         </mxCell>
         <mxCell id="ubc1t0KaTrGF7OC6TyDT-53" value="Escribe" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="-615" y="195" width="120" height="60" as="geometry" />
