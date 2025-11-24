@@ -6,10 +6,11 @@
     session_start();
 
     use controllers\ErrorController;
+    use helpers\Utils;
+    use models\Usuario;
 
     require_once 'autoload.php';
     require_once 'config.php';
-    require_once 'helpers/Utils.php';
 
     if (isset($_SESSION['identity']) && isset($_SESSION['identity']['id'])){
         // Obtiene los datos del usuario por su ID
@@ -20,6 +21,7 @@
             'nombre' => $usuario->getNombre(),
             'apellidos' => $usuario->getApellidos(),
             'email' => $usuario->getEmail(),
+            'redesSociales' => $usuario->getRedesSociales(),
             'rol' => $usuario->getRol()
         ];
 

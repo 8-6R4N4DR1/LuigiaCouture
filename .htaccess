@@ -3,7 +3,7 @@
     RewriteEngine On
 
     # Define la página de error 404 (página no encontrada) personalizada
-    ErrorDocument 404 http://localhost/dashboard/TFG_DAW_MartinVazquez_Adrian/error/
+    ErrorDocument 404 http://localhost/TFG_DAW_MartinVazquez_Adrian/error/
 
     # Condiciones para verificar si el archivo o directorio no existe
     RewriteCond %{SCRIPT_FILENAME} !-d
