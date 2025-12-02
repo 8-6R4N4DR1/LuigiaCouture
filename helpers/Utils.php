@@ -323,7 +323,7 @@
                 ':pedido_id' => $pedidoExcluirId
             ]);
     
-            $registro = $baseDatos->getSiguienteRegistro();
+            $registro = $baseDatos->getNextRegistro();
             
             $hayMasCompras = ($registro['total'] > 0);
         
