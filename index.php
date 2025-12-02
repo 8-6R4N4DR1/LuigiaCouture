@@ -143,5 +143,42 @@
 
     // Compruebo si la clase existe
     
+    if (class_exists($nombre_controlador)) {
+
+        $controlador = new $nombre_controlador();
+
+        // 1. Si existe la acción y el método en el controlador, se ejecuta ese
+        // 2. Si no, se ejecuta la acción por defecto
+        // 3. Si la acción no existe, se ejecuta el controlador de error
+
+        if (isset($_GET['action']) && method_exists($controlador, $_GET['action'])) {
+
+            $action = $_GET['action'];
+            $controlador->$action();
+
+        } elseif (!isset($_GET['controller']) && !isset($_GET['action'])) {
+
+            $action_default = ACTION_DEFAULT;
+            $controlador->$action_default();
+
+        } else {
+
+            (new ErrorController())->index();
+
+        }
+
+    } else {
+
+        (new ErrorController())->index();
+
+    }
+
+    // Requerir el footer
+
+    require_once 'views/layout/footer.php';
+
+    // Actualizo colores de interfaz en base al campo "color" de la tabla "usuarios"
+
+    
 
 ?>
