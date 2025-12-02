@@ -177,8 +177,8 @@
 
     require_once 'views/layout/footer.php';
 
-    // Actualizo colores de interfaz en base al campo "color" de la tabla "usuarios"
+    // Finalmente limpio el buffer de salida y lo envío al navegador
 
-    
+    ob_end_flush();
 
 ?>
