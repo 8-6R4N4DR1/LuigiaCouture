@@ -233,9 +233,7 @@
                         'nombre' => $usuario->getNombre(),
                         'apellidos' => $usuario->getApellidos(),
                         'email' => $usuario->getEmail(),
-                        'rol' => $usuario->getRol(),
-                        'color' => $usuario->getColor(),
-                        'imagen' => $usuario->getImagen()
+                        'rol' => $usuario->getRol()
                     ];
 
                     if ($usuario->getRol() == 'admin') $_SESSION['admin'] = true;
