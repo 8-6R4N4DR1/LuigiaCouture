@@ -2,7 +2,7 @@
 
     # Activar el módulo mod_rewrite
     RewriteEngine On
-    ErrorDocument 404 http://localhost/TFG/error/
+    ErrorDocument 404 http://localhost/dashboard/LuigiaCoutureTFG/error/
 
     # Redirigir todas las peticiones que sean archivos o directorios inexistentes
     RewriteCond %{SCRIPT_FILENAME} !-d

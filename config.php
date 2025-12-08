@@ -25,7 +25,7 @@
 
     // URL Base
 
-    define('BASE_URL', 'http://localhost/LuigiaCoutureTFG/');
+    define('BASE_URL', 'http://localhost/dashboard/LuigiaCoutureTFG/');
 
     // Paginación
 
