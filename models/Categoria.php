@@ -3,7 +3,7 @@
     /**
      * Modelo de las categorías de los productos
      * 
-     * Contiene los métodos
+     * Contiene los métodos...
      * save(): para guardar una nueva categoría en la base de datos
      * update(): para actualizar una categoría existente en la base de datos
      * delete(): para eliminar una categoría de la base de datos
