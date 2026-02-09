@@ -267,6 +267,93 @@
          * No inserta más unidades si no hay más stock.
          */
 
+        public function up() {
+
+            Utils::isIdentity();
+
+            if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+
+                $indice = isset($_GET['index']) ? (int) $_GET['index'] : false;
+
+                if ($indice !== false && isset($_SESSION['carrito'][$indice])) {
+
+                    $producto_id = $_SESSION['carrito'][$indice]['id_producto'];
+                    $producto = Producto::getById($producto_id);
+                    $stockDisponible = $producto->getStock();
+                    $cantidadEnCarrito = $_SESSION['carrito'][$indice]['unidades'];
+
+                    if ($cantidadEnCarrito < $stockDisponible) {
+
+                        $_SESSION['carrito'][$indice]['unidades']++;
+
+                    }else{
+
+                        $_SESSION['idProductoNoMas'] = $producto_id;
+                        $_SESSION['carritoResultado'] = 'failed_stock';
+                        header("Location: " . BASE_URL . 'carrito/gestion#failed_stock');
+                        exit;
+
+                    }
+
+                }
+
+                Utils::saveCookieCarrito();
+                header('Location: ' . BASE_URL . 'carrito/gestion' . ($indice ? '#' . $indice : ''));
+                exit;
+
+            } else {
+
+                header('Location: ' . BASE_URL);
+                exit;
+
+            }
+
+        }
+
+        /**
+         * Método para decrementar en 1 las unidades de un producto en el carrito.
+         * Si las unidades llegan a 0, se elimina la cookie del producto del carrito.
+         */
+
+        public function down() {
+
+            Utils::isIdentity();
+
+            if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+
+                $indice = isset($_GET['index']) ? (int) $_GET['index'] : false;
+
+                if ($indice !== false && isset($_SESSION['carrito'][$indice])) {
+
+                    $_SESSION['carrito'][$indice]['unidades']--;
+
+                    if ($_SESSION['carrito'][$indice]['unidades'] <= 0) {
+
+                        unset($_SESSION['carrito'][$indice]);
+                        $_SESSION['carrito'] = array_values($_SESSION['carrito']); // Reindexar el array
+
+                        if (count($_SESSION['carrito']) == 0) {
+                            Utils::deleteSession('carrito');
+                            Utils::deleteCookieCarrito();
+                        }
+
+                    }
+
+                }
+
+                Utils::saveCookieCarrito();
+                header('Location: ' . BASE_URL . 'carrito/gestion' . ($indice && $_SESSION['carrito'][$indice]['unidades'] > 0 ? '#' . $indice : ''));
+                exit;
+
+            } else {
+
+                header('Location: ' . BASE_URL);
+                exit;
+
+            }
+
+        }
+
     }
 
 ?>
